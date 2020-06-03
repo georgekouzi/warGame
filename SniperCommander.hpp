@@ -4,7 +4,6 @@
 #include <vector>
 #include <stdexcept>
 #include "Sniper.hpp"
-namespace WarGame {
 class SniperCommander:public Sniper
 {
 public:
@@ -14,4 +13,4 @@ public:
      ~SniperCommander(){};
 };
 
-};
+

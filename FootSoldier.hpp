@@ -4,7 +4,6 @@
 #include <stdexcept>
 #include "Soldier.hpp"
 
-namespace WarGame {
 
 class FootSoldier: public Soldier
 {
@@ -19,5 +18,5 @@ public:
      ~FootSoldier(){};
 
 };
-};
+
 

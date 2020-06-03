@@ -4,7 +4,6 @@
 #include <vector>
 #include <stdexcept>
 #include "Paramedic.hpp"
-namespace WarGame {
 class ParamedicCommander:public Paramedic
 {
 public:
@@ -15,4 +14,4 @@ public:
      ~ParamedicCommander(){};
 };
 
-};
+

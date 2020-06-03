@@ -1,15 +1,11 @@
 
 #pragma once
-
-// #ifndef HEADER_FOOTCOMMANDER_H
-// #define HEADER_FOOTCOMMANDER_H
 #include <string>
 #include <vector>
 #include <stdexcept>
 #include "FootSoldier.hpp"
 
 
-namespace WarGame {
 class FootCommander:public FootSoldier
 {
 public:
@@ -20,5 +16,4 @@ public:
      ~FootCommander(){};
 };
 
-};
-//  #endif
+

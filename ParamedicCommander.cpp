@@ -6,7 +6,6 @@
 #include <iostream>
 
 using namespace std;
- namespace WarGame{
 void ParamedicCommander::superDamageOrHilSoldier(vector<vector<Soldier*>>&s,pair<int ,int > location){
         for (int  i = 0; i < s.size(); i++){
         for (int j = 0; j < s.size(); j++){
@@ -15,4 +14,4 @@ void ParamedicCommander::superDamageOrHilSoldier(vector<vector<Soldier*>>&s,pair
           }     
         }
  }
- };
+ 

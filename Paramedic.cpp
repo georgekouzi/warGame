@@ -5,7 +5,6 @@
 #include <iostream>
 
 using namespace std;
- namespace WarGame{
 
  
  void Paramedic::damageOrHilSoldier(vector<vector<Soldier*>>&s,pair<int ,int > location) {
@@ -25,4 +24,4 @@ if(s[location.first][location.second]->Soldier_name=="Paramedic Commander") s[lo
  }
 
 
- };
+ 

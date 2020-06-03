@@ -6,21 +6,21 @@
 #include<float.h>
 #include <cmath>
 using namespace std;
- namespace WarGame{
  
 
 pair<int ,int > FootSoldier:: closerLocation(vector<vector<Soldier*>>&s,pair<int,int> location ) {
 double mindis=__DBL_MAX__;
-int enr,enc;
 pair<int ,int > distneiton;
 for (int  i = 0; i < s.size(); i++){
 for (int j = 0; j < s[0].size(); j++){
-if(s[i][j]!=nullptr&&s[location.first][location.second]->_numOfplayer!=s[i][j]->_numOfplayer&&mindis>DistanceBetween( location.first, location.second , i, j)){
-mindis=DistanceBetween( location.first, location.second , i, j);
+if(s[i][j]!=nullptr&&s[location.first][location.second]->_numOfplayer!=s[i][j]->_numOfplayer&&mindis>s[i][j]->DistanceBetween( location.first, location.second , i, j)){
+mindis=s[i][j]->DistanceBetween( location.first, location.second , i, j);
 distneiton={i,j};
+
 }
 }
 }
+
 return distneiton;
 };
  
@@ -39,7 +39,7 @@ cout<<s[distneiton_Attak.first][distneiton_Attak.second]->Soldier_name<<" of Gro
 
 if(s[location.first][location.second]->Soldier_name=="Foot Commander") s[location.first][location.second]->superDamageOrHilSoldier(s, {location.first,location.second});
 
-}
+
       
 
 
